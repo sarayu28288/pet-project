@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f9ff;
+}
+
+/* Header */
+.header {
+    background-color: #6ab7ff;
+    padding: 15px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #cce7ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 18px;
+}
+
+.hero .btn {
+    background-color: #6ab7ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #4a9ce0;
+}
+
+/* Products Section */
+.products, .services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-list, .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card, .service-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card img, .service-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3, .service-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.product-card p, .service-card p {
+    color: #555;
+}
+
+.product-card:hover, .service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background-color: #6ab7ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list, .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
